@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Background with Overlay</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Video Background with Header</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <div class="video-container">
         <video autoplay muted loop id="background-video" class="fullscreen-video">
             <source src="welcome.mp4" type="video/mp4">
+            <!-- Add more source elements for other video formats (WebM, Ogg) if necessary -->
         </video>
-        <div class="overlay"></div> 
-        <header>
-            <h1>Your Header</h1> 
+        <div class="overlay"></div> <!-- The black overlay -->
+        <header class="site-header">
+            <div class="company-name">IMMOBILIEN Invest</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Project</a></li>
+                </ul>
+            </nav>
         </header>
     </div>
 </body>
